@@ -1,0 +1,239 @@
+floran@GNU-Honor-Floran:~$ npm --version
+6.13.4
+floran@GNU-Honor-Floran:~$ npm update
+floran@GNU-Honor-Floran:~$ npm --version
+6.13.4
+floran@GNU-Honor-Floran:~$ npm update -g
+/home/floran/.nvm/versions/node/v12.16.1/bin/npm -> /home/floran/.nvm/versions/node/v12.16.1/lib/node_modules/npm/bin/npm-cli.js
+/home/floran/.nvm/versions/node/v12.16.1/bin/npx -> /home/floran/.nvm/versions/node/v12.16.1/lib/node_modules/npm/bin/npx-cli.js
++ npm@6.14.8
+added 18 packages from 4 contributors, removed 14 packages and updated 43 packages in 6.087s
+floran@GNU-Honor-Floran:~$ npm --version
+6.14.8
+floran@GNU-Honor-Floran:~$ cd DOcuments/quetes/Parcel-template-website-quest
+bash: cd: DOcuments/quetes/Parcel-template-website-quest: Aucun fichier ou dossier de ce type
+floran@GNU-Honor-Floran:~$ cd Documents/quetes/Parcel-template-website-quest
+floran@GNU-Honor-Floran:~/Documents/quetes/Parcel-template-website-quest$ npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (parcel-template-website-quest) npm WARN init canceled
+floran@GNU-Honor-Floran:~/Documents/quetes/Parcel-template-website-quest$ npm init -y
+Wrote to /home/floran/Documents/quetes/Parcel-template-website-quest/package.json:
+
+{
+  "name": "parcel-template-website-quest",
+  "version": "1.0.0",
+  "description": "Original repo: https://github.com/StartBootstrap/startbootstrap-3-col-portfolio",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/e-floran/Parcel-template-website-quest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/e-floran/Parcel-template-website-quest/issues"
+  },
+  "homepage": "https://github.com/e-floran/Parcel-template-website-quest#readme",
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-imagemin": "^4.0.1"
+  },
+  "dependencies": {},
+  "keywords": []
+}
+
+
+floran@GNU-Honor-Floran:~/Documents/quetes/Parcel-template-website-quest$ 
+floran@GNU-Honor-Floran:~/Documents/quetes/Parcel-template-website-quest$ npm install -g parcel-bundler
+npm WARN registry Unexpected warning for https://registry.npmjs.org/: Miscellaneous Warning EAI_AGAIN: request to https://registry.npmjs.org/parcel-bundler failed, reason: getaddrinfo EAI_AGAIN registry.npmjs.org
+npm WARN registry Using stale data from https://registry.npmjs.org/ due to a request error during revalidation.
+npm WARN deprecated core-js@2.6.11: core-js@<3 is no longer maintained and not recommended for usage due to the number of issues. Please, upgrade your dependencies to the actual version of core-js@3.
+npm WARN deprecated chokidar@2.1.8: Chokidar 2 will break on node v14+. Upgrade to chokidar 3 with 15x less dependencies.
+npm WARN deprecated fsevents@1.2.13: fsevents 1 will break on node v14+ and could be using insecure binaries. Upgrade to fsevents 2.
+npm WARN deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+npm WARN deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+npm WARN deprecated request-promise-native@1.0.9: request-promise-native has been deprecated because it extends the now deprecated request package, see https://github.com/request/request/issues/3142
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+/home/floran/.nvm/versions/node/v12.16.1/bin/parcel -> /home/floran/.nvm/versions/node/v12.16.1/lib/node_modules/parcel-bundler/bin/cli.js
+
+> parcel-bundler@1.12.4 postinstall /home/floran/.nvm/versions/node/v12.16.1/lib/node_modules/parcel-bundler
+> node -e "console.log('\u001b[35m\u001b[1mLove Parcel? You can now donate to our open collective:\u001b[22m\u001b[39m\n > \u001b[34mhttps://opencollective.com/parcel/donate\u001b[0m')"
+
+Love Parcel? You can now donate to our open collective:
+ > https://opencollective.com/parcel/donate
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.2.7 (node_modules/parcel-bundler/node_modules/chokidar/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
++ parcel-bundler@1.12.4
+updated 5 packages in 89.003s
+floran@GNU-Honor-Floran:~/Documents/quetes/Parcel-template-website-quest$ parcel index.html
+Server running at http://localhost:1234 
+✨  Built in 2.40s.
+^C
+floran@GNU-Honor-Floran:~/Documents/quetes/Parcel-template-website-quest$ parcel build index.html
+✨  Built in 3.72s.
+
+dist/bootstrap.de3a0e90.css.map                    164.52 KB     24ms
+dist/bootstrap.de3a0e90.css                         98.49 KB    1.76s
+dist/glyphicons-halflings-regular.48e0879b.svg       52.5 KB    612ms
+dist/glyphicons-halflings-regular.fd5ef7c6.ttf      40.27 KB    636ms
+dist/glyphicons-halflings-regular.7a7ca42e.woff     22.75 KB    636ms
+dist/glyphicons-halflings-regular.f3c1da71.eot      19.81 KB    637ms
+dist/index.html                                      2.78 KB    825ms
+dist/3-col-portfolio.d5320e22.css.map                  393 B      2ms
+dist/3-col-portfolio.d5320e22.css                      135 B    1.76s
+floran@GNU-Honor-Floran:~/Documents/quetes/Parcel-template-website-quest$ npm install -D parcel-bundler
+npm WARN deprecated core-js@2.6.11: core-js@<3 is no longer maintained and not recommended for usage due to the number of issues. Please, upgrade your dependencies to the actual version of core-js@3.
+npm WARN deprecated chokidar@2.1.8: Chokidar 2 will break on node v14+. Upgrade to chokidar 3 with 15x less dependencies.
+npm WARN deprecated fsevents@1.2.13: fsevents 1 will break on node v14+ and could be using insecure binaries. Upgrade to fsevents 2.
+npm WARN deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+npm WARN deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+npm WARN deprecated request-promise-native@1.0.9: request-promise-native has been deprecated because it extends the now deprecated request package, see https://github.com/request/request/issues/3142
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+
+> parcel-bundler@1.12.4 postinstall /home/floran/Documents/quetes/Parcel-template-website-quest/node_modules/parcel-bundler
+> node -e "console.log('\u001b[35m\u001b[1mLove Parcel? You can now donate to our open collective:\u001b[22m\u001b[39m\n > \u001b[34mhttps://opencollective.com/parcel/donate\u001b[0m')"
+
+Love Parcel? You can now donate to our open collective:
+ > https://opencollective.com/parcel/donate
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.2.7 (node_modules/chokidar/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
++ parcel-bundler@1.12.4
+updated 4 packages and audited 1003 packages in 12.912s
+
+29 packages are looking for funding
+  run `npm fund` for details
+
+found 2 high severity vulnerabilities
+  run `npm audit fix` to fix them, or `npm audit` for details
+floran@GNU-Honor-Floran:~/Documents/quetes/Parcel-template-website-quest$ npm audit
+                                                                                
+                       === npm audit security report ===                        
+                                                                                
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                                Manual Review                                 │
+│            Some vulnerabilities require your attention to resolve            │
+│                                                                              │
+│         Visit https://go.npm.me/audit-guide for additional guidance          │
+└──────────────────────────────────────────────────────────────────────────────┘
+┌───────────────┬──────────────────────────────────────────────────────────────┐
+│ High          │ Prototype Pollution in node-forge                            │
+├───────────────┼──────────────────────────────────────────────────────────────┤
+│ Package       │ node-forge                                                   │
+├───────────────┼──────────────────────────────────────────────────────────────┤
+│ Patched in    │ >= 0.10.0                                                    │
+├───────────────┼──────────────────────────────────────────────────────────────┤
+│ Dependency of │ parcel-bundler [dev]                                         │
+├───────────────┼──────────────────────────────────────────────────────────────┤
+│ Path          │ parcel-bundler > node-forge                                  │
+├───────────────┼──────────────────────────────────────────────────────────────┤
+│ More info     │ https://npmjs.com/advisories/1561                            │
+└───────────────┴──────────────────────────────────────────────────────────────┘
+┌───────────────┬──────────────────────────────────────────────────────────────┐
+│ High          │ Prototype Pollution in node-forge                            │
+├───────────────┼──────────────────────────────────────────────────────────────┤
+│ Package       │ node-forge                                                   │
+├───────────────┼──────────────────────────────────────────────────────────────┤
+│ Patched in    │ >= 0.10.0                                                    │
+├───────────────┼──────────────────────────────────────────────────────────────┤
+│ Dependency of │ parcel-plugin-imagemin [dev]                                 │
+├───────────────┼──────────────────────────────────────────────────────────────┤
+│ Path          │ parcel-plugin-imagemin > parcel-bundler > node-forge         │
+├───────────────┼──────────────────────────────────────────────────────────────┤
+│ More info     │ https://npmjs.com/advisories/1561                            │
+└───────────────┴──────────────────────────────────────────────────────────────┘
+found 2 high severity vulnerabilities in 1003 scanned packages
+  2 vulnerabilities require manual review. See the full report for details.
+floran@GNU-Honor-Floran:~/Documents/quetes/Parcel-template-website-quest$ npm start
+
+> parcel-template-website-quest@1.0.0 start /home/floran/Documents/quetes/Parcel-template-website-quest
+> parcel index.html
+
+Server running at http://localhost:1234 
+✨  Built in 1.06s.
+npm run build
+^C
+floran@GNU-Honor-Floran:~/Documents/quetes/Parcel-template-website-quest$ npm run build
+
+> parcel-template-website-quest@1.0.0 build /home/floran/Documents/quetes/Parcel-template-website-quest
+> parcel build index.html
+
+✨  Built in 493ms.
+
+dist/bootstrap.de3a0e90.css.map                    164.52 KB    27ms
+dist/bootstrap.de3a0e90.css                         98.49 KB    24ms
+dist/glyphicons-halflings-regular.48e0879b.svg       52.5 KB    17ms
+dist/glyphicons-halflings-regular.fd5ef7c6.ttf      40.27 KB    23ms
+dist/glyphicons-halflings-regular.7a7ca42e.woff     22.75 KB    23ms
+dist/glyphicons-halflings-regular.f3c1da71.eot      19.81 KB    23ms
+dist/index.html                                      2.78 KB    10ms
+dist/3-col-portfolio.d5320e22.css.map                  393 B     8ms
+dist/3-col-portfolio.d5320e22.css                      135 B    11ms
+floran@GNU-Honor-Floran:~/Documents/quetes/Parcel-template-website-quest$ npm install parcel-plugin-imagemin -D
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
++ parcel-plugin-imagemin@4.0.1
+updated 1 package and audited 1003 packages in 11.275s
+
+28 packages are looking for funding
+  run `npm fund` for details
+
+found 2 high severity vulnerabilities
+  run `npm audit fix` to fix them, or `npm audit` for details
+floran@GNU-Honor-Floran:~/Documents/quetes/Parcel-template-website-quest$ npm audit
+                                                                                
+                       === npm audit security report ===                        
+                                                                                
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                                Manual Review                                 │
+│            Some vulnerabilities require your attention to resolve            │
+│                                                                              │
+│         Visit https://go.npm.me/audit-guide for additional guidance          │
+└──────────────────────────────────────────────────────────────────────────────┘
+┌───────────────┬──────────────────────────────────────────────────────────────┐
+│ High          │ Prototype Pollution in node-forge                            │
+├───────────────┼──────────────────────────────────────────────────────────────┤
+│ Package       │ node-forge                                                   │
+├───────────────┼──────────────────────────────────────────────────────────────┤
+│ Patched in    │ >= 0.10.0                                                    │
+├───────────────┼──────────────────────────────────────────────────────────────┤
+│ Dependency of │ parcel-bundler [dev]                                         │
+├───────────────┼──────────────────────────────────────────────────────────────┤
+│ Path          │ parcel-bundler > node-forge                                  │
+├───────────────┼──────────────────────────────────────────────────────────────┤
+│ More info     │ https://npmjs.com/advisories/1561                            │
+└───────────────┴──────────────────────────────────────────────────────────────┘
+┌───────────────┬──────────────────────────────────────────────────────────────┐
+│ High          │ Prototype Pollution in node-forge                            │
+├───────────────┼──────────────────────────────────────────────────────────────┤
+│ Package       │ node-forge                                                   │
+├───────────────┼──────────────────────────────────────────────────────────────┤
+│ Patched in    │ >= 0.10.0                                                    │
+├───────────────┼──────────────────────────────────────────────────────────────┤
+│ Dependency of │ parcel-plugin-imagemin [dev]                                 │
+├───────────────┼──────────────────────────────────────────────────────────────┤
+│ Path          │ parcel-plugin-imagemin > parcel-bundler > node-forge         │
+├───────────────┼──────────────────────────────────────────────────────────────┤
+│ More info     │ https://npmjs.com/advisories/1561                            │
+└───────────────┴──────────────────────────────────────────────────────────────┘
+found 2 high severity vulnerabilities in 1003 scanned packages
+  2 vulnerabilities require manual review. See the full report for details.
+floran@GNU-Honor-Floran:~/Documents/quetes/Parcel-template-website-quest$ 
